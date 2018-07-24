@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0"
+           name="Title of your feature"
+           skipped="0"
+           tests="2"
+           time="1.715867">
+   <testcase classname="demo.soap.printDateWithJavaFun"
+             name="Title of your scenario outline (1)"
+             time="1.694001">
+      <system-out>* call [common routine that does not update headers] classpath:demo/headers/common-noheaders.feature.passed
+Given url demoBaseUrl.......................................................passed
+And path 'headers'..........................................................passed
+When method get.............................................................passed
+Then status 200.............................................................passed
+* def time = responseCookies.time.value.....................................passed
+* def token = response......................................................passed
+* def getDate =.............................................................passed
+* def temp = getDate()......................................................passed
+Given print 'I want to write a step with', "name1"..........................passed
+When print 'I check for the', "5", 'in step',...............................passed
+Then print 'I verify the', "success", 'in step',............................passed
+</system-out>
+   </testcase>
+   <testcase classname="demo.soap.printDateWithJavaFun"
+             name="Title of your scenario outline (2)"
+             time="0.021866">
+      <system-out>* def getDate =.............................................................passed
+* def temp = getDate()......................................................passed
+Given print 'I want to write a step with', "name2"..........................passed
+When print 'I check for the', "7", 'in step',...............................passed
+Then print 'I verify the', "Fail", 'in step',...............................passed
+</system-out>
+   </testcase>
+</testsuite>

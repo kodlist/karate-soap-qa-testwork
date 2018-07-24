@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0"
+           name="Title of your feature  I want to use this template for my feature file"
+           skipped="0"
+           tests="2"
+           time="2.047387">
+   <testcase classname="demo.soap.sample" name="1 (1)" time="1.506117">
+      <system-out>* call [common routine that does not update headers] classpath:demo/headers/common-noheaders.feature.passed
+Given url demoBaseUrl.......................................................passed
+And path 'headers'..........................................................passed
+When method get.............................................................passed
+Then status 200.............................................................passed
+* def time = responseCookies.time.value.....................................passed
+* def token = response......................................................passed
+Given url urlForDneOnlineCalculator.........................................passed
+* def reqxml = read('request.xml')..........................................passed
+* set reqxml /..............................................................passed
+And request reqxml..........................................................passed
+And header Content-Type = addHeader.........................................passed
+When method post............................................................passed
+Then match response /Envelope/Body/AddResponse/AddResult == "6".............passed
+Then status 200.............................................................passed
+</system-out>
+   </testcase>
+   <testcase classname="demo.soap.sample" name="2 (2)" time="0.54127">
+      <system-out>Given url urlForDneOnlineCalculator.........................................passed
+* def reqxml = read('request.xml')..........................................passed
+* set reqxml /..............................................................passed
+And request reqxml..........................................................passed
+And header Content-Type = addHeader.........................................passed
+When method post............................................................passed
+Then match response /Envelope/Body/AddResponse/AddResult == "10"............passed
+Then status 200.............................................................passed
+</system-out>
+   </testcase>
+</testsuite>

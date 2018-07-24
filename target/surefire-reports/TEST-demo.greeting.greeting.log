@@ -1,0 +1,63 @@
+12:01:26.700 >> lock acquired, begin callSingle: classpath:demo/headers/common-noheaders.feature
+12:01:26.984 request:
+1 > GET http://127.0.0.1:51372/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51372
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+12:01:27.118 response time in milliseconds: 133
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Mon, 23 Jul 2018 06:31:27 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1532327487093
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+2bab810c-7845-4609-91a5-a02ed25bd376
+
+12:01:27.137 << lock released, end callSingle: classpath:demo/headers/common-noheaders.feature
+12:01:27.152 request:
+1 > GET http://127.0.0.1:51372/greeting
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51372
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+12:01:27.193 response time in milliseconds: 40
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 23 Jul 2018 06:31:27 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":1,"content":"Hello World!"}
+
+12:01:27.209 request:
+1 > GET http://127.0.0.1:51372/greeting?name=Billie
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51372
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+12:01:27.212 response time in milliseconds: 2
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 23 Jul 2018 06:31:27 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":2,"content":"Hello Billie!"}
+

@@ -1,0 +1,423 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 0,
+            "name": "call [common routine that does not update headers] classpath:demo/headers/common-noheaders.feature",
+            "match": {},
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 0,
+              "value": "{\n  \"demoBaseUrl\": \"http://127.0.0.1:51372\"\n}\n"
+            }
+          },
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "url demoBaseUrl",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demoBaseUrl",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "path \u0027headers\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027headers\u0027",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefs.path(String\u003e)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "method get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "get",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 8,
+              "value": "12:01:26.984 request:\n1 \u003e GET http://127.0.0.1:51372/headers\n1 \u003e Accept-Encoding: gzip,deflate\n1 \u003e Connection: Keep-Alive\n1 \u003e Host: 127.0.0.1:51372\n1 \u003e User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)\n\n12:01:27.118 response time in milliseconds: 133\n1 \u003c 200\n1 \u003c Cache-Control: no-cache, no-store, max-age\u003d0, must-revalidate\n1 \u003c Content-Length: 36\n1 \u003c Content-Type: text/plain;charset\u003dUTF-8\n1 \u003c Date: Mon, 23 Jul 2018 06:31:27 GMT\n1 \u003c Expires: 0\n1 \u003c Pragma: no-cache\n1 \u003c Set-Cookie: time\u003d1532327487093\n1 \u003c X-Content-Type-Options: nosniff\n1 \u003c X-Frame-Options: DENY\n1 \u003c X-XSS-Protection: 1; mode\u003dblock\n2bab810c-7845-4609-91a5-a02ed25bd376\n\n"
+            }
+          },
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "def time \u003d responseCookies.time.value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "time",
+                  "offset": 4
+                },
+                {
+                  "val": "responseCookies.time.value",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "def token \u003d response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "token",
+                  "offset": 4
+                },
+                {
+                  "val": "response",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 965440043,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "url demoBaseUrl",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demoBaseUrl",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 4,
+              "value": "12:01:27.137 \u003c\u003c lock released, end callSingle: classpath:demo/headers/common-noheaders.feature\n"
+            }
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "get default greeting",
+        "description": "",
+        "id": "greeting-end-point;get-default-greeting",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1877683,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "path \u0027greeting\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027greeting\u0027",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefs.path(String\u003e)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42755473,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "method get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "get",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 9,
+              "value": "12:01:27.152 request:\n1 \u003e GET http://127.0.0.1:51372/greeting\n1 \u003e Accept-Encoding: gzip,deflate\n1 \u003e Connection: Keep-Alive\n1 \u003e Host: 127.0.0.1:51372\n1 \u003e User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)\n\n12:01:27.193 response time in milliseconds: 40\n1 \u003c 200\n1 \u003c Cache-Control: no-cache, no-store, max-age\u003d0, must-revalidate\n1 \u003c Content-Type: application/json;charset\u003dUTF-8\n1 \u003c Date: Mon, 23 Jul 2018 06:31:27 GMT\n1 \u003c Expires: 0\n1 \u003c Pragma: no-cache\n1 \u003c Transfer-Encoding: chunked\n1 \u003c X-Content-Type-Options: nosniff\n1 \u003c X-Frame-Options: DENY\n1 \u003c X-XSS-Protection: 1; mode\u003dblock\n{\"id\":1,\"content\":\"Hello World!\"}\n\n"
+            }
+          },
+          {
+            "result": {
+              "duration": 75460,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1381905,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "match response \u003d\u003d { id: \u0027#number\u0027, content: \u0027Hello World!\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "response",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 15
+                },
+                {
+                  "val": "{ id: \u0027#number\u0027, content: \u0027Hello World!\u0027 }",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7925765,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "url demoBaseUrl",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demoBaseUrl",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "get custom greeting",
+        "description": "",
+        "id": "greeting-end-point;get-custom-greeting",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 166435,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "path \u0027greeting\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027greeting\u0027",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefs.path(String\u003e)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1951028,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "param name \u003d \u0027Billie\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 6
+                },
+                {
+                  "val": "\u0027Billie\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.param(String,String\u003e)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4533239,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "method get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "get",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 17,
+              "value": "12:01:27.209 request:\n1 \u003e GET http://127.0.0.1:51372/greeting?name\u003dBillie\n1 \u003e Accept-Encoding: gzip,deflate\n1 \u003e Connection: Keep-Alive\n1 \u003e Host: 127.0.0.1:51372\n1 \u003e User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)\n\n12:01:27.212 response time in milliseconds: 2\n1 \u003c 200\n1 \u003c Cache-Control: no-cache, no-store, max-age\u003d0, must-revalidate\n1 \u003c Content-Type: application/json;charset\u003dUTF-8\n1 \u003c Date: Mon, 23 Jul 2018 06:31:27 GMT\n1 \u003c Expires: 0\n1 \u003c Pragma: no-cache\n1 \u003c Transfer-Encoding: chunked\n1 \u003c X-Content-Type-Options: nosniff\n1 \u003c X-Frame-Options: DENY\n1 \u003c X-XSS-Protection: 1; mode\u003dblock\n{\"id\":2,\"content\":\"Hello Billie!\"}\n\n"
+            }
+          },
+          {
+            "result": {
+              "duration": 71934,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 207691,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "match response \u003d\u003d { id: \u0027#number\u0027, content: \u0027Hello Billie!\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "response",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 15
+                },
+                {
+                  "val": "{ id: \u0027#number\u0027, content: \u0027Hello Billie!\u0027 }",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "demo/greeting/greeting.feature",
+    "description": "greeting end-point",
+    "id": "greeting-end-point",
+    "keyword": "Feature",
+    "uri": "demo/greeting/greeting.feature"
+  }
+]

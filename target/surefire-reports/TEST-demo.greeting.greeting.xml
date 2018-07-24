@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0"
+           name="greeting end-point"
+           skipped="0"
+           tests="2"
+           time="1.026387">
+   <testcase classname="demo.greeting.greeting"
+             name="get default greeting"
+             time="1.011531">
+      <system-out>* call [common routine that does not update headers] classpath:demo/headers/common-noheaders.feature.passed
+Given url demoBaseUrl.......................................................passed
+And path 'headers'..........................................................passed
+When method get.............................................................passed
+Then status 200.............................................................passed
+* def time = responseCookies.time.value.....................................passed
+* def token = response......................................................passed
+* url demoBaseUrl...........................................................passed
+Given path 'greeting'.......................................................passed
+When method get.............................................................passed
+Then status 200.............................................................passed
+And match response == { id: '#number', content: 'Hello World!' }............passed
+</system-out>
+   </testcase>
+   <testcase classname="demo.greeting.greeting"
+             name="get custom greeting"
+             time="0.014856">
+      <system-out>* url demoBaseUrl...........................................................passed
+Given path 'greeting'.......................................................passed
+And param name = 'Billie'...................................................passed
+When method get.............................................................passed
+Then status 200.............................................................passed
+And match response == { id: '#number', content: 'Hello Billie!' }...........passed
+</system-out>
+   </testcase>
+</testsuite>

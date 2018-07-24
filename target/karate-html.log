@@ -1,0 +1,521 @@
+16:36:50.658 >> lock acquired, begin callSingle: classpath:demo/headers/common-noheaders.feature
+16:36:50.929 request:
+1 > GET http://127.0.0.1:53949/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53949
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:36:51.086 response time in milliseconds: 156
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 11:06:51 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1532084811054
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+1ab96580-85f8-4681-934f-32f6d4b968c6
+
+16:36:51.097 << lock released, end callSingle: classpath:demo/headers/common-noheaders.feature
+16:36:51.187 request:
+1 > POST http://www.dneonline.com/calculator.asmx
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 306
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: www.dneonline.com
+1 > SOAPAction: http://tempuri.org/Add
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Body>
+    <Add xmlns="http://tempuri.org/">
+      <intA>2</intA>
+      <intB>8</intB>
+    </Add>
+  </soap:Body>
+</soap:Envelope>
+
+16:36:51.660 response time in milliseconds: 471
+1 < 200
+1 < Cache-Control: private, max-age=0
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 20 Jul 2018 11:06:50 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 2.0.50727
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AddResponse xmlns="http://tempuri.org/"><AddResult>10</AddResult></AddResponse></soap:Body></soap:Envelope>
+
+16:36:51.691 [print] response:  <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soap:Body>
+      <AddResponse xmlns="http://tempuri.org/">
+         <AddResult>10</AddResult>
+      </AddResponse>
+   </soap:Body>
+</soap:Envelope>
+
+16:20:36.541 request:
+1 > POST http://www.dneonline.com/calculator.asmx
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 314
+1 > Content-Type: application/soap+xml; charset=UTF-8
+1 > Host: www.dneonline.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+<soap12:Envelope xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap12:Body>
+    <Add xmlns="http://tempuri.org/">
+      <intA>5</intA>
+      <intB>3</intB>
+    </Add>
+  </soap12:Body>
+</soap12:Envelope>
+
+16:20:37.058 response time in milliseconds: 516
+1 < 200
+1 < Cache-Control: private, max-age=0
+1 < Content-Length: 323
+1 < Content-Type: application/soap+xml; charset=utf-8
+1 < Date: Fri, 20 Jul 2018 10:50:35 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < X-AspNet-Version: 2.0.50727
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AddResponse xmlns="http://tempuri.org/"><AddResult>8</AddResult></AddResponse></soap:Body></soap:Envelope>
+
+16:20:37.071 assertion failed: path: /Envelope/Body/AddResponse/AddResponse/_/AddResult, actual: '8', expected: '5', reason: not equal
+5C60D7AE
+2 > Host: 127.0.0.1:53425
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+2 > X-CSRF-TOKEN: 6df52610-3adc-497b-9a04-de5039e8e4ac
+username=john&password=secret
+
+16:18:39.125 response time in milliseconds: 2
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 7
+2 < Content-Type: text/plain;charset=UTF-8
+2 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+success
+
+
+{"name":["foo"],"country":["IN"],"active":["true"],"limit":["1"]}
+
+16:18:38.724 [print] {
+  "name": "bar",
+  "country": null,
+  "active": null,
+  "limit": 5
+}
+
+16:18:38.725 request:
+1 > GET http://127.0.0.1:53425/search?name=bar&limit=5
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.731 response time in milliseconds: 5
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["bar"],"limit":["5"]}
+
+16:18:38.741 [print] {
+  "name": "baz",
+  "country": "JP",
+  "active": null,
+  "limit": null
+}
+
+16:18:38.742 request:
+1 > GET http://127.0.0.1:53425/search?name=baz&country=JP
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.745 response time in milliseconds: 3
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["baz"],"country":["JP"]}
+
+16:18:38.750 [print] {
+  "name": null,
+  "country": "US",
+  "active": null,
+  "limit": 3
+}
+
+16:18:38.756 request:
+1 > GET http://127.0.0.1:53425/search?country=US&limit=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.759 response time in milliseconds: 3
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"country":["US"],"limit":["3"]}
+
+16:18:38.765 [print] {
+  "name": null,
+  "country": null,
+  "active": false,
+  "limit": null
+}
+
+16:18:38.766 request:
+1 > GET http://127.0.0.1:53425/search?active=false
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.770 response time in milliseconds: 3
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"active":["false"]}
+
+16:18:38.798 request:
+1 > GET http://127.0.0.1:53425/search?name=foo&country=IN&active=true&limit=1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.801 response time in milliseconds: 2
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["foo"],"country":["IN"],"active":["true"],"limit":["1"]}
+
+16:18:38.829 request:
+1 > GET http://127.0.0.1:53425/search?name=bar&limit=5
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.831 response time in milliseconds: 2
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["bar"],"limit":["5"]}
+
+16:18:38.843 request:
+1 > GET http://127.0.0.1:53425/search?name=baz&country=JP
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.845 response time in milliseconds: 2
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["baz"],"country":["JP"]}
+
+16:18:38.854 request:
+1 > GET http://127.0.0.1:53425/search?country=US&limit=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.856 response time in milliseconds: 2
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"country":["US"],"limit":["3"]}
+
+16:18:38.864 request:
+1 > GET http://127.0.0.1:53425/search?active=false
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.865 response time in milliseconds: 1
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"active":["false"]}
+
+16:18:38.897 request:
+1 > GET http://127.0.0.1:53425/search?name=foo&country=IN&active=true&limit=1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.900 response time in milliseconds: 3
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["foo"],"country":["IN"],"active":["true"],"limit":["1"]}
+
+16:18:38.905 request:
+1 > GET http://127.0.0.1:53425/search?name=bar&limit=5
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.907 response time in milliseconds: 2
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["bar"],"limit":["5"]}
+
+16:18:38.912 request:
+1 > GET http://127.0.0.1:53425/search?name=baz&country=JP
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.914 response time in milliseconds: 2
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["baz"],"country":["JP"]}
+
+16:18:38.919 request:
+1 > GET http://127.0.0.1:53425/search?country=US&limit=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.922 response time in milliseconds: 2
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"country":["US"],"limit":["3"]}
+
+16:18:38.928 request:
+1 > GET http://127.0.0.1:53425/search?active=false
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.931 response time in milliseconds: 2
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"active":["false"]}
+
+16:18:38.944 request:
+1 > GET http://127.0.0.1:53425/search?name=one&country=two
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.945 response time in milliseconds: 1
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["one"],"country":["two"]}
+
+16:18:38.951 request:
+1 > GET http://127.0.0.1:53425/search?foo=bar&foo=baz
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:53425
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.953 response time in milliseconds: 2
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"foo":["bar","baz"]}
+
+16:18:38.955 request:
+2 > GET http://127.0.0.1:53425/search?foo=bar&foo=baz
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: 127.0.0.1:53425
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.957 response time in milliseconds: 2
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"foo":["bar","baz"]}
+
+16:18:38.961 request:
+3 > GET http://127.0.0.1:53425/search?foo=bar%2Cbaz
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: 127.0.0.1:53425
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.963 response time in milliseconds: 2
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+{"foo":["bar,baz"]}
+
+16:18:38.964 request:
+4 > GET http://127.0.0.1:53425/search?foo=bar%2Cbaz
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Host: 127.0.0.1:53425
+4 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+16:18:38.966 response time in milliseconds: 2
+4 < 200
+4 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 < Content-Type: application/json;charset=UTF-8
+4 < Date: Fri, 20 Jul 2018 10:48:38 GMT
+4 < Expires: 0
+4 < Pragma: no-cache
+4 < Transfer-Encoding: chunked
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: DENY
+4 < X-XSS-Protection: 1; mode=block
+{"foo":["bar,baz"]}
+

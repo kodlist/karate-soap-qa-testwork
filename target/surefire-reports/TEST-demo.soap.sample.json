@@ -1,0 +1,747 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: mehar.koduri@realpage.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: sample"
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: small default scenario"
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 22,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 24,
+            "value": "#\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
+          }
+        ],
+        "line": 26,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "line": 172,
+        "name": "",
+        "description": "",
+        "id": "title-of-your-feature--i-want-to-use-this-template-for-my-feature-file;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 0,
+            "name": "call [common routine that does not update headers] classpath:demo/headers/common-noheaders.feature",
+            "match": {},
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 0,
+              "value": "{\n  \"demoBaseUrl\": \"http://127.0.0.1:54737\"\n}\n"
+            }
+          },
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "url demoBaseUrl",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demoBaseUrl",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "path \u0027headers\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027headers\u0027",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefs.path(String\u003e)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "method get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "get",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 8,
+              "value": "15:10:43.741 request:\n1 \u003e GET http://127.0.0.1:54737/headers\n1 \u003e Accept-Encoding: gzip,deflate\n1 \u003e Connection: Keep-Alive\n1 \u003e Host: 127.0.0.1:54737\n1 \u003e User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)\n\n15:10:43.863 response time in milliseconds: 121\n1 \u003c 200\n1 \u003c Cache-Control: no-cache, no-store, max-age\u003d0, must-revalidate\n1 \u003c Content-Length: 36\n1 \u003c Content-Type: text/plain;charset\u003dUTF-8\n1 \u003c Date: Tue, 24 Jul 2018 09:40:43 GMT\n1 \u003c Expires: 0\n1 \u003c Pragma: no-cache\n1 \u003c Set-Cookie: time\u003d1532425243841\n1 \u003c X-Content-Type-Options: nosniff\n1 \u003c X-Frame-Options: DENY\n1 \u003c X-XSS-Protection: 1; mode\u003dblock\ne4079e76-0085-4b80-ae8f-01f1ce3bd839\n\n"
+            }
+          },
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "def time \u003d responseCookies.time.value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "time",
+                  "offset": 4
+                },
+                {
+                  "val": "responseCookies.time.value",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "def token \u003d response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "token",
+                  "offset": 4
+                },
+                {
+                  "val": "response",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 938310754,
+              "status": "passed"
+            },
+            "line": 155,
+            "name": "url urlForDneOnlineCalculator",
+            "match": {
+              "arguments": [
+                {
+                  "val": "urlForDneOnlineCalculator",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "Given ",
+            "doc_string": {
+              "content_type": "",
+              "line": 155,
+              "value": "15:10:43.872 \u003c\u003c lock released, end callSingle: classpath:demo/headers/common-noheaders.feature\n"
+            }
+          },
+          {
+            "result": {
+              "duration": 6049845,
+              "status": "passed"
+            },
+            "line": 156,
+            "name": "def reqxml \u003d read(\u0027request.xml\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "reqxml",
+                  "offset": 4
+                },
+                {
+                  "val": "read(\u0027request.xml\u0027)",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 19280732,
+              "status": "passed"
+            },
+            "line": 157,
+            "name": "set reqxml /",
+            "match": {
+              "arguments": [
+                {
+                  "val": "reqxml",
+                  "offset": 4
+                },
+                {
+                  "val": " /",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.setByPathTable(String,String,DataTable)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "path",
+                  "value"
+                ],
+                "line": 158
+              },
+              {
+                "cells": [
+                  "Add/intA",
+                  "\"4\""
+                ],
+                "line": 159
+              },
+              {
+                "cells": [
+                  "Add/intB",
+                  "\"2\""
+                ],
+                "line": 160
+              }
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 38435,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 161,
+                "value": "#* print \u0027\u003d\u003d\u003d\u003d\u003d\u003d req \u003d\u003d\u003d\u003d\u003d \u0027,reqxml"
+              },
+              {
+                "line": 162,
+                "value": "#* def foo \u003d karate.pretty(reqxml)"
+              },
+              {
+                "line": 163,
+                "value": "#* configure logPrettyRequest \u003d true"
+              }
+            ],
+            "line": 164,
+            "name": "request reqxml",
+            "match": {
+              "arguments": [
+                {
+                  "val": "reqxml",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefs.request(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1653067,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 165,
+                "value": "# soap is just an HTTP POST, so here we set the required header manually .."
+              }
+            ],
+            "line": 166,
+            "name": "header Content-Type \u003d addHeader",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 7
+                },
+                {
+                  "val": "addHeader",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefs.header(String,String\u003e)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 531624083,
+              "status": "passed"
+            },
+            "line": 167,
+            "name": "method post",
+            "match": {
+              "arguments": [
+                {
+                  "val": "post",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 167,
+              "value": "15:10:43.936 request:\n1 \u003e POST http://www.dneonline.com/calculator.asmx?op\u003dAdd\n1 \u003e Accept-Encoding: gzip,deflate\n1 \u003e Connection: Keep-Alive\n1 \u003e Content-Length: 307\n1 \u003e Content-Type: application/soap+xml; charset\u003dUTF-8\n1 \u003e Host: www.dneonline.com\n1 \u003e User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)\n\u003csoap12:Envelope xmlns:soap12\u003d\"http://www.w3.org/2003/05/soap-envelope\"\n                 xmlns:xsd\u003d\"http://www.w3.org/2001/XMLSchema\"\n                 xmlns:xsi\u003d\"http://www.w3.org/2001/XMLSchema-instance\"\u003e\n   \u003csoap12:Body\u003e\n      \u003cAdd xmlns\u003d\"http://tempuri.org/\"\u003e\n         \u003cintA\u003e4\u003c/intA\u003e\n         \u003cintB\u003e2\u003c/intB\u003e\n      \u003c/Add\u003e\n   \u003c/soap12:Body\u003e\n\u003c/soap12:Envelope\u003e\n\n\n15:10:44.435 response time in milliseconds: 494\n1 \u003c 200\n1 \u003c Cache-Control: private, max-age\u003d0\n1 \u003c Content-Length: 323\n1 \u003c Content-Type: application/soap+xml; charset\u003dutf-8\n1 \u003c Date: Tue, 24 Jul 2018 09:40:42 GMT\n1 \u003c Server: Microsoft-IIS/7.5\n1 \u003c X-AspNet-Version: 2.0.50727\n1 \u003c X-Powered-By: ASP.NET\n\u003csoap:Envelope xmlns:soap\u003d\"http://www.w3.org/2003/05/soap-envelope\"\n               xmlns:xsd\u003d\"http://www.w3.org/2001/XMLSchema\"\n               xmlns:xsi\u003d\"http://www.w3.org/2001/XMLSchema-instance\"\u003e\n   \u003csoap:Body\u003e\n      \u003cAddResponse xmlns\u003d\"http://tempuri.org/\"\u003e\n         \u003cAddResult\u003e6\u003c/AddResult\u003e\n      \u003c/AddResponse\u003e\n   \u003c/soap:Body\u003e\n\u003c/soap:Envelope\u003e\n\n\n"
+            }
+          },
+          {
+            "result": {
+              "duration": 9030163,
+              "status": "passed"
+            },
+            "line": 168,
+            "name": "match response /Envelope/Body/AddResponse/AddResult \u003d\u003d \"6\"",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "response",
+                  "offset": 6
+                },
+                {
+                  "val": " /Envelope/Body/AddResponse/AddResult",
+                  "offset": 14
+                },
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 52
+                },
+                {
+                  "val": "\"6\"",
+                  "offset": 55
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 130116,
+              "status": "passed"
+            },
+            "line": 169,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@tag"
+          },
+          {
+            "line": 153,
+            "name": "@changeInputDataInRequestXMLDynamically_02"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 24,
+            "value": "#\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
+          }
+        ],
+        "line": 26,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "line": 173,
+        "name": "",
+        "description": "",
+        "id": "title-of-your-feature--i-want-to-use-this-template-for-my-feature-file;;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16928425,
+              "status": "passed"
+            },
+            "line": 155,
+            "name": "url urlForDneOnlineCalculator",
+            "match": {
+              "arguments": [
+                {
+                  "val": "urlForDneOnlineCalculator",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3589286,
+              "status": "passed"
+            },
+            "line": 156,
+            "name": "def reqxml \u003d read(\u0027request.xml\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "reqxml",
+                  "offset": 4
+                },
+                {
+                  "val": "read(\u0027request.xml\u0027)",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5616832,
+              "status": "passed"
+            },
+            "line": 157,
+            "name": "set reqxml /",
+            "match": {
+              "arguments": [
+                {
+                  "val": "reqxml",
+                  "offset": 4
+                },
+                {
+                  "val": " /",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.setByPathTable(String,String,DataTable)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "path",
+                  "value"
+                ],
+                "line": 158
+              },
+              {
+                "cells": [
+                  "Add/intA",
+                  "\"6\""
+                ],
+                "line": 159
+              },
+              {
+                "cells": [
+                  "Add/intB",
+                  "\"4\""
+                ],
+                "line": 160
+              }
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 58887,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 161,
+                "value": "#* print \u0027\u003d\u003d\u003d\u003d\u003d\u003d req \u003d\u003d\u003d\u003d\u003d \u0027,reqxml"
+              },
+              {
+                "line": 162,
+                "value": "#* def foo \u003d karate.pretty(reqxml)"
+              },
+              {
+                "line": 163,
+                "value": "#* configure logPrettyRequest \u003d true"
+              }
+            ],
+            "line": 164,
+            "name": "request reqxml",
+            "match": {
+              "arguments": [
+                {
+                  "val": "reqxml",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefs.request(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 581465,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 165,
+                "value": "# soap is just an HTTP POST, so here we set the required header manually .."
+              }
+            ],
+            "line": 166,
+            "name": "header Content-Type \u003d addHeader",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 7
+                },
+                {
+                  "val": "addHeader",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefs.header(String,String\u003e)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 506452182,
+              "status": "passed"
+            },
+            "line": 167,
+            "name": "method post",
+            "match": {
+              "arguments": [
+                {
+                  "val": "post",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 167,
+              "value": "15:10:44.485 request:\n1 \u003e POST http://www.dneonline.com/calculator.asmx?op\u003dAdd\n1 \u003e Accept-Encoding: gzip,deflate\n1 \u003e Connection: Keep-Alive\n1 \u003e Content-Length: 307\n1 \u003e Content-Type: application/soap+xml; charset\u003dUTF-8\n1 \u003e Host: www.dneonline.com\n1 \u003e User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)\n\u003csoap12:Envelope xmlns:soap12\u003d\"http://www.w3.org/2003/05/soap-envelope\"\n                 xmlns:xsd\u003d\"http://www.w3.org/2001/XMLSchema\"\n                 xmlns:xsi\u003d\"http://www.w3.org/2001/XMLSchema-instance\"\u003e\n   \u003csoap12:Body\u003e\n      \u003cAdd xmlns\u003d\"http://tempuri.org/\"\u003e\n         \u003cintA\u003e6\u003c/intA\u003e\n         \u003cintB\u003e4\u003c/intB\u003e\n      \u003c/Add\u003e\n   \u003c/soap12:Body\u003e\n\u003c/soap12:Envelope\u003e\n\n\n15:10:44.985 response time in milliseconds: 493\n1 \u003c 200\n1 \u003c Cache-Control: private, max-age\u003d0\n1 \u003c Content-Length: 324\n1 \u003c Content-Type: application/soap+xml; charset\u003dutf-8\n1 \u003c Date: Tue, 24 Jul 2018 09:40:42 GMT\n1 \u003c Server: Microsoft-IIS/7.5\n1 \u003c X-AspNet-Version: 2.0.50727\n1 \u003c X-Powered-By: ASP.NET\n\u003csoap:Envelope xmlns:soap\u003d\"http://www.w3.org/2003/05/soap-envelope\"\n               xmlns:xsd\u003d\"http://www.w3.org/2001/XMLSchema\"\n               xmlns:xsi\u003d\"http://www.w3.org/2001/XMLSchema-instance\"\u003e\n   \u003csoap:Body\u003e\n      \u003cAddResponse xmlns\u003d\"http://tempuri.org/\"\u003e\n         \u003cAddResult\u003e10\u003c/AddResult\u003e\n      \u003c/AddResponse\u003e\n   \u003c/soap:Body\u003e\n\u003c/soap:Envelope\u003e\n\n\n"
+            }
+          },
+          {
+            "result": {
+              "duration": 7844666,
+              "status": "passed"
+            },
+            "line": 168,
+            "name": "match response /Envelope/Body/AddResponse/AddResult \u003d\u003d \"10\"",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "response",
+                  "offset": 6
+                },
+                {
+                  "val": " /Envelope/Body/AddResponse/AddResult",
+                  "offset": 14
+                },
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 52
+                },
+                {
+                  "val": "\"10\"",
+                  "offset": 55
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 198171,
+              "status": "passed"
+            },
+            "line": 169,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@tag"
+          },
+          {
+            "line": 153,
+            "name": "@changeInputDataInRequestXMLDynamically_02"
+          }
+        ]
+      }
+    ],
+    "name": "demo/soap/sample.feature",
+    "description": "Title of your feature  I want to use this template for my feature file",
+    "id": "title-of-your-feature--i-want-to-use-this-template-for-my-feature-file",
+    "keyword": "Feature",
+    "uri": "demo/soap/sample.feature",
+    "tags": [
+      {
+        "line": 21,
+        "name": "@tag"
+      }
+    ]
+  }
+]

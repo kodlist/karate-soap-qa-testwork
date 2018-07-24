@@ -1,0 +1,31 @@
+11:27:19.530 >> lock acquired, begin callSingle: classpath:demo/headers/common-noheaders.feature
+11:27:19.955 request:
+1 > GET http://127.0.0.1:50965/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:50965
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_172)
+
+11:27:20.138 response time in milliseconds: 182
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Mon, 23 Jul 2018 05:57:20 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1532325440105
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+05751ba0-dcb1-4ff6-8084-504c3efbddc1
+
+11:27:20.150 << lock released, end callSingle: classpath:demo/headers/common-noheaders.feature
+11:27:20.225 [print] I want to write a step with name1
+11:27:20.236 [print] I check for the 5 in step
+11:27:20.246 [print] I verify the success in step
+11:27:20.263 [print] I want to write a step with name2
+11:27:20.267 [print] I check for the 7 in step
+11:27:20.271 [print] I verify the Fail in step
+ri\workspacetwo\karateIntuit\karate\karate-demo\target\test-classes\demo\soap\printDateWithJavaFun.feature, line: 53
+vaFun.feature, line: 54
